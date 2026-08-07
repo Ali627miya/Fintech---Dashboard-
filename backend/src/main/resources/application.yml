@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: fintech-dashboard
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fintech_dashboard
+    username: fintech_user
+    password: local_dev_password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+truelayer:
+  client-id: ${TRUELAYER_CLIENT_ID}
+  client-secret: ${TRUELAYER_CLIENT_SECRET}
+  redirect-uri: ${TRUELAYER_REDIRECT_URI}
+  auth-base-url: https://auth.truelayer-sandbox.com
+  api-base-url: https://api.truelayer-sandbox.com
+
+server:
+  port: 8080

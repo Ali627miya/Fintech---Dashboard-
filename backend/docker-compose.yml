@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: fintech-postgres
+    environment:
+      POSTGRES_DB: fintech_dashboard
+      POSTGRES_USER: fintech_user
+      POSTGRES_PASSWORD: local_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - fintech_pg_data:/var/lib/postgresql/data
+
+volumes:
+  fintech_pg_data:

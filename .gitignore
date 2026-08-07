@@ -38,3 +38,4 @@ application-local.yml
 # Node (for frontend, later)
 node_modules/
 dist/
+target/
