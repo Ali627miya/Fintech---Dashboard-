@@ -3,7 +3,6 @@
 Open Banking finance dashboard built with Spring Boot + React, using TrueLayer's UK Open Banking sandbox API.
 
 ## Features
-(fill in as you build)
 
 ## Tech Stack
 - Backend: Java, Spring Boot, PostgreSQL, Flyway
