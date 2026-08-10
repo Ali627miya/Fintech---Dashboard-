@@ -2,6 +2,24 @@
 
 Open Banking finance dashboard built with Spring Boot + React, using TrueLayer's UK Open Banking sandbox API.
 
+A personal finance dashboard that connects to a UK bank account via TrueLayer’s
+Open Banking API, pulls transaction data, categorises spending, and (eventually) tracks budgets and detects
+recurring payments/anomalies.
+
+Open Banking is a UK/EU regulatory framework requiring banks to expose account data to authorised
+third parties via secure APIs, with the account holder’s explicit consent. TrueLayer is a middleman that
+implements this for many UK banks behind one unified API, so you don’t have to integrate with each bank
+separately.
+The flow follows standard OAuth2 Authorization Code Grant:
+1. Your app redirects the user to TrueLayer’s consent screen with your client_id, a redirect_uri,
+and requested scopes (what data you want access to).
+2. The user logs into their bank (or, in Sandbox, a Mock Bank) and approves access.
+3. TrueLayer redirects the user back to your redirect_uri with a temporary authorization code.
+4. Your backend exchanges that code (plus your client_secret, proving your app’s identity) for an
+access_token (short-lived) and a refresh_token (long-lived, used to get new access tokens later
+without the user logging in again).
+5. Your app uses the access_token to call TrueLayer’s Data API for accounts/transactions.
+
 ## Features
 
 ## Tech Stack
