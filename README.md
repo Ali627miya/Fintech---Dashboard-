@@ -22,6 +22,17 @@ without the user logging in again).
 
 ## Features
 
+Key commands used:
+git clone https://github.com/YOUR_USERNAME/fintech-dashboard.git
+cd fintech-dashboard
+git add .gitignore
+git commit -m "Update gitignore for secrets, IDE, and frontend files"
+git push
+git checkout -b feature/initial-scaffold
+git add .
+git commit -m "..."
+git push -u origin feature/initial-scaffold
+
 ## Tech Stack
 - Backend: Java, Spring Boot, PostgreSQL, Flyway
 - Frontend: React
