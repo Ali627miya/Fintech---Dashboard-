@@ -4,7 +4,7 @@ Open Banking finance dashboard built with Spring Boot + React, using TrueLayer's
 
 A personal finance dashboard that connects to a UK bank account via TrueLayer’s
 Open Banking API, pulls transaction data, categorises spending, and (eventually) tracks budgets and detects
-recurring payments/anomalies.
+recurring payments/anomalies .
 
 Open Banking is a UK/EU regulatory framework requiring banks to expose account data to authorised
 third parties via secure APIs, with the account holder’s explicit consent. TrueLayer is a middleman that
