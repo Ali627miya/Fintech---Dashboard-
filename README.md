@@ -23,7 +23,7 @@ without the user logging in again).
 ## Features
 
 Key commands used:
-git clone https://github.com/YOUR_USERNAME/fintech-dashboard.git
+git clone https://github.com/ALi627miya/fintech-dashboard.git
 cd fintech-dashboard
 git add .gitignore
 git commit -m "Update gitignore for secrets, IDE, and frontend files"
