@@ -13,7 +13,10 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .csrf(csrf -> csrf.disable())
+            .formLogin(form -> form.disable())
+            .httpBasic(basic -> basic.disable())
             .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/api/auth/connect").permitAll()
                 .requestMatchers("/api/**").permitAll()
                 .anyRequest().authenticated()
             );

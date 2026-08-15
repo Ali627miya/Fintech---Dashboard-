@@ -39,3 +39,4 @@ application-local.yml
 node_modules/
 dist/
 target/
+backend/src/main/resources/application.yml
