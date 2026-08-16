@@ -39,7 +39,12 @@ git push -u origin feature/initial-scaffold
 - Infra: Docker, GitHub Actions CI
 
 ## Setup
-(fill in once backend exists)
+First Flyway Migration (V1__init_schema.sql)
+Created the full initial schema: users, user_tokens, accounts, categories, transactions, budgets,
+recurring_payments, plus seeded 9 default categories (Groceries, Dining, Transport, Bills, Entertainment,
+Shopping, Subscriptions, Income, Other).
+File location (important – Flyway requires this exact path):
+src/main/resources/db/migration/V1__init_schema.sql
 
 ## Architecture
 (add diagram in Week 8)
