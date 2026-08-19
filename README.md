@@ -43,3 +43,29 @@ git push -u origin feature/initial-scaffold
 
 ## Architecture
 (add diagram in Week 8)
+
+7. Full Command Reference (chronological, for your own notes)
+# --- GitHub setup ---
+git clone https://github.com/YOUR_USERNAME/fintech-dashboard.git
+cd fintech-dashboard
+git add .gitignore && git commit -m "Update gitignore" && git push
+# --- Branching workflow ---
+git checkout -b feature/initial-scaffold
+git add . && git commit -m "..." && git push -u origin feature/initial-scaffold
+git checkout -b feature/oauth-flow
+# --- Maven wrapper fixes ---
+chmod +x mvnw
+mvn -N wrapper:wrapper
+# --- Docker / Postgres ---
+docker compose up -d
+docker ps
+docker compose down -v
+# --- Running the app ---
+./mvnw spring-boot:run
+# --- Testing endpoints ---
+curl -i http://localhost:8080/api/categories
+curl http://localhost:8080/api/auth/connect
+# --- Debugging ---
+find . -name "SomeFile.java"
+pwd
+8
