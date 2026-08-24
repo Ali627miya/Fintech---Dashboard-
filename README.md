@@ -20,7 +20,7 @@ access_token (short-lived) and a refresh_token (long-lived, used to get new acce
 without the user logging in again).
 5. Your app uses the access_token to call TrueLayer’s Data API for accounts/transactions.
 
-## Features
+# Features
 
 Key commands used:
 git clone https://github.com/ALi627miya/fintech-dashboard.git
@@ -48,7 +48,7 @@ src/main/resources/db/migration/V1__init_schema.sql
 ## Architecture
 
 
-7. Full Command Reference (chronological, for your own notes)
+ Full Command Reference (chronological, for your own notes)
 # --- GitHub setup ---
 git clone https://github.com/YOUR_USERNAME/fintech-dashboard.git
 cd fintech-dashboard
