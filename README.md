@@ -70,6 +70,3 @@ docker compose down -v
 curl -i http://localhost:8080/api/categories
 curl http://localhost:8080/api/auth/connect
 # --- Debugging ---
-find . -name "SomeFile.java"
-pwd
-8
